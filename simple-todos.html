@@ -1,0 +1,13 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+    </header>
+
+    <ul>
+      {{#each tasks}}
+      <li>{{text}}:{{createdAt}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</body>
