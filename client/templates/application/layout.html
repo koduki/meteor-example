@@ -1,0 +1,25 @@
+<template name="layout">
+  <body>
+    <!-- Header -->
+    <header class="bar bar-nav">
+      <h1 class="title">シンプルアラーム</h1>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+      {{> yield}}
+    </div>
+
+    <!-- Footer -->
+    <nav class="bar bar-tab">
+      <a class="tab-item active" href="/">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">ホーム</span>
+      </a>
+      <a class="tab-item" href="/edit">
+        <span class="icon icon-edit"></span>
+        <span class="tab-label">追加</span>
+      </a>
+    </nav>
+  </body>
+</template>

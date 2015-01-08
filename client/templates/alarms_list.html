@@ -1,0 +1,9 @@
+<template name="alarmsList">
+  <div class="card">
+    <ul class="table-view">
+      {{#each alarms}}
+      <li class="table-view-cell"><span class="time">{{time}}</span> {{name}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</template>
