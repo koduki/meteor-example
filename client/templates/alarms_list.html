@@ -2,7 +2,10 @@
   <div class="card">
     <ul class="table-view">
       {{#each alarms}}
-      <li class="table-view-cell"><span class="time">{{time}}</span> {{name}}</li>
+      <li class="table-view-cell content-padded">
+        <span class="time">{{time}}</span> {{name}}
+        <a class="close" href="#"><span class="icon icon-close"></span></a>
+      </li>
       {{/each}}
     </ul>
   </div>
